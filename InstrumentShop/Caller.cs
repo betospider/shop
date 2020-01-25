@@ -9,7 +9,7 @@ namespace InstrumentShop
         public void CallerInstrumentType(Instrument instrument)
         {
             string inst;
-            inst = instrument.InstrumentType();
+            inst = instrument.Type;
             Console.WriteLine("{0}", inst);
         }
 

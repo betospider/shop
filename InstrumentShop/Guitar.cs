@@ -8,16 +8,16 @@ namespace InstrumentShop
     {
         public Guitar(string name, string type, int price) : base()
         {
-            this.name = name;
-            this.type = type;
-            this.price = price;
+            this.Name = name;
+            this.Type = type;
+            this.Price = price;
         }
-        public override string InstrumentType()
-        {
-            Console.WriteLine("\nGuitars available:");
-            return name + price + type;
+        //public override string InstrumentType()
+        //{
+        //    Console.WriteLine("\nGuitars available:");
+        //    return Name + Price + type;
 
-        }
+        //}
 
 
 

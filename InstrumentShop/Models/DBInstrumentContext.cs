@@ -8,7 +8,9 @@ namespace InstrumentShop.Models
     class DBInstrumentContext : DbContext
     {
         public string connectionString = @"Server=localhost\SQLEXPRESS;Database=instruments;Trusted_Connection=True;";
+
         public DbSet<Instrument> Instruments{ get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
